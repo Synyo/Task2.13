@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE Orange Task 13</title>
+  </head>
+<body>
+
+  <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+  <button id="button">确认填写</button>
+  <div>您输入的值是：<span id="aqi-display"></span></div>
+
+<script type="text/javascript">
+(function() 
+{
+     var myBtn=document.getElementById('button');
+     myBtn.onclick=function(){
+     var myInput=document.getElementById('aqi-input').value;
+     var mySpan=document.getElementById('aqi-display');
+     if(myInput !== '')
+     {
+        mySpan.innerHTML = myInput;
+     }
+     else
+	 {
+        mySpan.innerHTML="尚无输入";
+     }
+
+}
+})();
+
+</script>
+</body>
+</html>
